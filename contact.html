@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+
+<head>
+
+
+    <meta charset="UTF-8">
+
+
+    <title> GFB Azərbaycan Rəsmi WEB Səhifəsi </title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/26d4a64054.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 300;
+            margin: 0;
+            padding: 0;
+            background-color: #006600;
+            list-style: none;  
+        }
+
+
+        nav {
+            padding: 25px;
+            position: sticky;
+            top: 0;
+            background-color: #FFFF00;
+            display: grid;
+            grid-template-columns: 25% auto;
+            column-gap: 20%;
+        }
+
+
+        /** Navigation Bar **/
+
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000033;
+            transition: opacity 200ms ease-in-out;
+            overflow: hidden;
+        }
+
+
+
+        nav ul li a:after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 3px;
+            margin-top: 3px;
+            border-radius: 3px;
+            background-color: #000033;
+            transition: width .2s ease-in-out;
+        }
+
+
+
+        nav ul li a.current::after {
+            width: 100%;
+        }
+
+
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        
+        /** Heading **/
+        
+        .heading {
+            text-align: center;
+
+        }
+
+        .heading span {
+            font-weight: 500;
+            font-size;
+            75px;
+            color: #000033;
+        }
+
+         h1 {
+            position: absolute;
+            top: 50%;
+            left: 30%;
+        }
+        
+        /** Social Media Buttons **/
+        
+        #social {
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background: #006600;
+            text-align: center;
+            
+            
+        }
+        
+        #social li {
+            position: relative;
+            display: block;
+            color: #666;
+            font-size: 30px;
+            height: 60px;
+            width: 60px;
+            background: #171515;
+            line-height: 60px;
+            border-radius: 50%;
+            margin: 0 15px;
+            cursor: pointer;
+            transition: .5s;
+        }
+        
+        #social li:before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            /** background: #d35400; **/
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            z-index: -1;
+            transform: scale(0.9);
+            transition: .5s;
+            
+        }
+        
+        
+        #social li:nth-child(1):before
+        {
+            background: #4267B2;
+        }
+        
+        #social li:hover:before {
+            filter: blur(3px);
+            transform: scale(3);
+            /** box-shadow: 0 0 15px #d35400; **/
+        }
+        
+        
+        
+        
+         #social li:nth-child(1):hover:before
+        {
+            box-shadow: 0 0 15px #4267B2;
+        }
+        
+        
+        #social li:nth-child(1):hover {
+            color: #456cba;
+            box-shadow: 0 0 15px #4267B2;
+            text-shadow: 0 0 15px #4267B2;
+        }
+        
+        #social li:hover{
+            color: #ffa502;
+            box-shadow: 
+        }
+        
+        
+        #social li:nth-child(2):before
+        {
+            background: #1DA1F2;
+        }
+        
+        #social li:nth-child(3):before
+        {
+            background: #E1306C;
+        }
+        
+        #social li:nth-child(4):before
+        {
+            background: #ff0000;
+        }
+        
+        
+        
+         #social li:nth-child(2):hover:before
+        {
+            box-shadow: 0 0 15px #1DA1F2;
+        }
+        
+         #social li:nth-child(3):hover:before
+        {
+            box-shadow: 0 0 15px #E1306C;
+        }
+        
+         #social li:nth-child(4):hover:before
+        {
+            box-shadow: 0 0 15px #ff0000;
+        }
+        
+        
+        #social li:nth-child(2):hover {
+            color: #456cba;
+            box-shadow: 0 0 15px #1DA1F2;
+            text-shadow: 0 0 15px #1DA1F2;
+        }
+        
+        #social li:nth-child(3):hover {
+            color: #456cba;
+            box-shadow: 0 0 15px #E1306C;
+            text-shadow: 0 0 15px #E1306C;
+        }
+        
+        #social li:nth-child(4):hover {
+            color: #456cba;
+            box-shadow: 0 0 15px #ff0000;
+            text-shadow: 0 0 15px #ff0000;
+        }
+       
+        
+        
+        
+
+    </style>
+
+
+
+
+</head>
+
+
+
+
+<body>
+
+
+    <!--Navigation Bar-->
+
+    <nav>
+
+        <!--Heading-->
+
+        <div class="heading">
+            <span> GFB Azərbaycan Rəsmi WEB Səhifəsi </span>
+        </div>
+
+
+        <!--Menu Bar-->
+
+        <ul>
+
+            <!--Home-->
+            <li>
+                <a href="index.html">
+                    <i class="fas fa-home"></i>
+                    Əsas Səhifə
+                </a>
+            </li>
+
+            <!--About-->
+
+            <li>
+                <a href="about.html">
+                    <i class="fas fa-info"></i>
+                    Haqqımızda
+                </a>
+            </li>
+
+            <!--Activity-->
+
+            <li>
+                <a href="news.html">
+                   <i class="far fa-newspaper"></i>
+
+                    Son Xəbərlər
+                </a>
+            </li>
+
+
+
+            <!--Contact-->
+
+            <li>
+                <a href="contact.html">
+                    <i class="fas fa-phone"></i>
+                    Əlaqə
+                </a>
+            </li>
+
+
+        </ul>
+    </nav>
+
+
+
+    <div>
+        
+        <ul id="social"> 
+        
+        <!-- Facebook -->
+       
+            <li> 
+                
+            <a href = "https://www.facebook.com/aze.gencfenerbahceliler/?pageid=213465912070077&ftentidentifier=2698547446895232&padding=0"> 
+            
+            <i class = "fab fa-facebook-f">  </i> 
+            
+            </a> 
+            
+            </li>
+            
+            
+            <!-- Twitter --> 
+            
+            <li> 
+            
+            <a href="https://twitter.com/gfbazerbaycan?lang=en"> 
+            
+            <i class = "fab fa-twitter">  </i> 
+            
+            </a> 
+            
+            </li>
+            
+            
+            <!-- Instagram --> 
+            
+            <li> 
+            
+            <a href ="https://www.instagram.com/gfbazerbaycan/"> 
+            
+            <i class = "fab fa-instagram">  </i> 
+            
+            </a> 
+            
+            </li>
+            
+            
+            <!-- Youtube -->
+            <li> 
+            
+            <a href ="https://www.youtube.com/channel/UCSMKv_SDuSPWCDDjEKi6A-Q"> 
+            
+            <i class = "fab fa-youtube"> </i> 
+            
+            </a> 
+            
+            </li>
+       
+       </ul>
+
+        
+    </div>
+
+
+
+</body>
+
+
+</html>
