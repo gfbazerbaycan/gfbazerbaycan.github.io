@@ -18,16 +18,22 @@
     <script src="https://kit.fontawesome.com/26d4a64054.js" crossorigin="anonymous"></script>
 
     <style>
+        
+        
         body {
             font-family: 'Quicksand', sans-serif;
             font-weight: 300;
             margin: 0;
             padding: 0;
-            background-color: #006600;
+            background-color: #808080;
             list-style: none;  
         }
 
 
+        
+        /** Navigation Bar **/
+        
+        
         nav {
             padding: 25px;
             position: sticky;
@@ -39,7 +45,7 @@
         }
 
 
-        /** Navigation Bar **/
+       
 
 
         nav ul {
@@ -104,133 +110,83 @@
             left: 30%;
         }
         
-        /** Social Media Buttons **/
         
-        #social {
-            display: flex;
-            height: 100vh;
-            align-items: center;
-            justify-content: center;
-            background: #006600;
+        /** Social Media **/
+        
+        .follow {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: normal;
+            font-size: 25px;
+            letter-spacing: 4px;
+            padding: 200px 0 100px;
+            color: #555;
             text-align: center;
             
+        }
+        
+        .social-media {
+            display: flex;
+            justify-content: center;
+            margin-top: 250px;
             
         }
         
-        #social li {
-            position: relative;
-            display: block;
-            color: #666;
-            font-size: 30px;
-            height: 60px;
-            width: 60px;
-            background: #171515;
-            line-height: 60px;
-            border-radius: 50%;
+        .social-link {
+         display: flex;
+            background: #e3edf7;
+            height: 75px;
+            width: 75px;
             margin: 0 15px;
-            cursor: pointer;
-            transition: .5s;
-        }
-        
-        #social li:before {
-            position: absolute;
-            content: "";
-            top: 0;
-            left: 0;
-            /** background: #d35400; **/
-            height: 100%;
-            width: 100%;
-            border-radius: 50%;
-            z-index: -1;
-            transform: scale(0.9);
-            transition: .5s;
+            border-radius: 8px;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
             
+            border: 1px solid rgba(0,0,0,0);
+            transition: transform 0.5s;
         }
         
         
-        #social li:nth-child(1):before
-        {
-            background: #4267B2;
+        .social-link i {
+            font-size: 35px;
+            color: #777;
+            transition: transform 0.5s;
         }
         
-        #social li:hover:before {
-            filter: blur(3px);
-            transform: scale(3);
-            /** box-shadow: 0 0 15px #d35400; **/
+        .social-link:hover {
+            box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+            -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(255,255,255,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+            border: 1px solid rgba(0,0,0,0.01);
+            
+            transform: translateY(2px);
+                
         }
         
-        
-        
-        
-         #social li:nth-child(1):hover:before
-        {
-            box-shadow: 0 0 15px #4267B2;
+        .social-link:hover i {
+            transform: scale(0.90);
         }
         
-        
-        #social li:nth-child(1):hover {
-            color: #456cba;
-            box-shadow: 0 0 15px #4267B2;
-            text-shadow: 0 0 15px #4267B2;
+        .social-link:hover .fa-facebook {
+            color: #3b5998;
         }
         
-        #social li:hover{
-            color: #ffa502;
-            box-shadow: 
+        .social-link:hover .fa-twitter {
+            color: #00acee;
         }
         
-        
-        #social li:nth-child(2):before
-        {
-            background: #1DA1F2;
+        .social-link:hover .fa-instagram {
+            color: #f14843;
         }
         
-        #social li:nth-child(3):before
-        {
-            background: #E1306C;
+        .social-link:hover .fa-youtube {
+            color: #f00;
         }
         
-        #social li:nth-child(4):before
-        {
-            background: #ff0000;
-        }
-        
-        
-        
-         #social li:nth-child(2):hover:before
-        {
-            box-shadow: 0 0 15px #1DA1F2;
-        }
-        
-         #social li:nth-child(3):hover:before
-        {
-            box-shadow: 0 0 15px #E1306C;
-        }
-        
-         #social li:nth-child(4):hover:before
-        {
-            box-shadow: 0 0 15px #ff0000;
-        }
-        
-        
-        #social li:nth-child(2):hover {
-            color: #456cba;
-            box-shadow: 0 0 15px #1DA1F2;
-            text-shadow: 0 0 15px #1DA1F2;
-        }
-        
-        #social li:nth-child(3):hover {
-            color: #456cba;
-            box-shadow: 0 0 15px #E1306C;
-            text-shadow: 0 0 15px #E1306C;
-        }
-        
-        #social li:nth-child(4):hover {
-            color: #456cba;
-            box-shadow: 0 0 15px #ff0000;
-            text-shadow: 0 0 15px #ff0000;
-        }
-       
         
         
         
@@ -305,66 +261,52 @@
         </ul>
     </nav>
 
-
-
-    <div>
-        
-        <ul id="social"> 
-        
-        <!-- Facebook -->
+<!-- 
+<h1 class="follow"> Bizi Sosial Mediada Izləyin </h1> -->
+   
+   <div class="social-media">
+      
+      
+      <!-- Facebook -->
        
-            <li> 
-                
-            <a href = "https://www.facebook.com/aze.gencfenerbahceliler/?pageid=213465912070077&ftentidentifier=2698547446895232&padding=0"> 
-            
-            <i class = "fab fa-facebook-f">  </i> 
-            
-            </a> 
-            
-            </li>
-            
-            
-            <!-- Twitter --> 
-            
-            <li> 
-            
-            <a href="https://twitter.com/gfbazerbaycan?lang=en"> 
-            
-            <i class = "fab fa-twitter">  </i> 
-            
-            </a> 
-            
-            </li>
-            
-            
-            <!-- Instagram --> 
-            
-            <li> 
-            
-            <a href ="https://www.instagram.com/gfbazerbaycan/"> 
-            
-            <i class = "fab fa-instagram">  </i> 
-            
-            </a> 
-            
-            </li>
-            
-            
-            <!-- Youtube -->
-            <li> 
-            
-            <a href ="https://www.youtube.com/channel/UCSMKv_SDuSPWCDDjEKi6A-Q"> 
-            
-            <i class = "fab fa-youtube"> </i> 
-            
-            </a> 
-            
-            </li>
+       <a href="https://www.facebook.com/aze.gencfenerbahceliler/?pageid=213465912070077&ftentidentifier=2698547446895232&padding=0" class="social-link">  
        
-       </ul>
-
+       <i class="fab fa-facebook"> </i>   
+       
+       
+       </a>
+       
+       
+        <!-- Twitter -->
         
-    </div>
+        
+        <a href="https://twitter.com/gfbazerbaycan?lang=en" class="social-link">   
+        
+        <i class="fab fa-twitter"> </i>    
+        
+        </a>
+        
+        
+         <!-- Instagram -->
+         
+         
+         <a href="https://www.instagram.com/gfbazerbaycan/" class="social-link">   
+         
+         <i class="fab fa-instagram"> </i>    
+         
+         </a>
+         
+          <!-- YouTube -->
+          
+          <a href="https://www.youtube.com/channel/UCSMKv_SDuSPWCDDjEKi6A-Q" class="social-link">   
+          
+          <i class="fab fa-youtube"> </i>   
+          
+            </a>
+       
+   </div>
+
+   
 
 
 
