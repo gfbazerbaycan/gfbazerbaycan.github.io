@@ -25,7 +25,8 @@
             padding: 0;
             background-color: #006600;
         }
-
+        
+/** Navigation Bar **/
 
         nav {
             padding: 25px;
@@ -42,11 +43,7 @@
             position: absolute;
             left: 33%;
         }
-
-
-        /** Navigation Bar **/
-
-
+        
         nav ul {
             margin: 0;
             padding: 0;
@@ -102,15 +99,126 @@
             75px;
             color: #000033;
         }
-
-
-        
         
          h1 {
             position: absolute;
             top: 50%;
             left: 30%;
         }
+        
+         /** News **/
+        
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            font-weight: 500;
+            color: #000033;
+        }
+
+
+        #container {
+            width: 1140px;
+            margin: 20px auto;
+
+
+        }
+
+        #blog-post-container {
+            width: 75%;
+            float: left;
+        }
+
+        #other-posts {
+            width: 25%;
+            float: left;
+            padding-left: 5px;
+
+        }
+
+        #author-box {
+            border-top: 1px solid RGB (0, 0, 0, .125);
+            padding-top: 10px;
+        }
+
+        #author-box img {
+            border-radius: 50%;
+            float: left;
+
+        }
+
+        #inner-other-posts {
+            top: 20px;
+        }
+
+        .author-text {
+            float: left;
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+
+
+        #share a {
+            color: gray;
+            text-decoration: none;
+            margin-right: 6px;
+            opacity: 0.6;
+        }
+
+        #share a:hover {
+            opacity: 0.9;
+        }
+
+        .box {
+            background: #CCCC00;
+            margin-bottom: 15px;
+            padding: 20px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            box-shadow: 0 0 0 1px rgba(0,0,0,.06);
+        }
+
+        .blog-post {
+            position: relative;
+        }
+
+        .blog-text {
+            margin-top: 15px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #000033;
+            line-height: 22px;
+            text-align: justify;
+        }
+
+        .date {
+            position: absolute;
+            right: 50px;
+            top: 20px;
+            color: #aaa;
+            font-size: 12px;
+        }
+
+
+        .tags {
+            margin: 0;
+            padding: 0;
+        }
+
+        .tags li {
+            list-style: none;
+            display: inline;
+            margin-right: 5px;
+        }
+
+        .tags li a {
+            text-decoration: none;
+        }
+
+        .blog-post img {
+            width: 100%;
+        }
+        
+        
     </style>
 
 
@@ -185,7 +293,7 @@
     </nav>
 
 
-
+<!--
     <h1 style="font-size: 30px; 
                color: #FFFF00; 
                position: absolute; 
@@ -193,7 +301,97 @@
         <i class="fas fa-cog fa-spin fa-3x" id="cog" style="position: absolute; top: 200px; left: 200px;"></i> 
         WEB Səhifədə redaktə işləri gedir. 
     </h1>
+-->
+    
+    <!-- News -->
 
+<div id="container">
+
+        <div id="blog-post-container">
+
+            <div class="blog-post box">
+
+                <h2> My First Blog Post </h2>
+<!--
+                <img src="web.jpeg">
+-->
+                <p class="date"> 19.08.20 </p>
+
+                <p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed labore officia, voluptate at quisquam minus molestias rerum. Corporis temporibus minima deserunt eligendi atque, voluptates, veritatis, numquam consequuntur repellendus perferendis voluptate? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, numquam tempore minima, incidunt excepturi repellendus. Porro aut explicabo quisquam deleniti culpa, incidunt provident, eaque, neque sit totam eum laborum ea!</p>
+<!--
+                <ul class="tags">
+
+                    <li><a href=" "> HTML </a></li>
+                    <li><a href=" "> CSS </a></li>
+                    <li><a href=" "> JavaScript </a></li>
+
+                </ul>
+-->
+            </div>
+
+            <div class="blog-post box">
+
+                <h2> My Second Blog Post </h2>
+
+                <p class="date"> 20.08.20 </p>
+
+                <p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed labore officia, voluptate at quisquam minus molestias rerum. Corporis temporibus minima deserunt eligendi atque, voluptates, veritatis, numquam consequuntur repellendus perferendis voluptate?
+                    <br> <br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, numquam tempore minima, incidunt excepturi repellendus. Porro aut explicabo quisquam deleniti culpa, incidunt provident, eaque, neque sit totam eum laborum ea!</p>
+<!--
+                <ul class="tags">
+
+                    <li><a href=" "> Python </a></li>
+                    <li><a href=" "> TKinter </a></li>
+                    <li><a href=" "> Django </a></li>
+
+                </ul>
+-->
+            </div>
+
+            <div class="blog-post box">
+
+                <h2> My Third Blog Post </h2>
+
+                <p class="date"> 21.08.20 </p>
+
+                <p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed labore officia, voluptate at quisquam minus molestias rerum. Corporis temporibus minima deserunt eligendi atque, voluptates, veritatis, numquam consequuntur repellendus perferendis voluptate?
+                    <br> <br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, numquam tempore minima, incidunt excepturi repellendus. Porro aut explicabo quisquam deleniti culpa, incidunt provident, eaque, neque sit totam eum laborum ea!</p>
+<!--
+                <ul class="tags">
+
+                    <li><a href=" "> MySQL </a></li>
+                    <li><a href=" "> PostgreSQL </a></li>
+
+                </ul>
+-->
+            </div>
+
+            <div class="blog-post box">
+
+                <h2> My Forth Blog Post </h2>
+
+                <p class="date"> 22.08.20 </p>
+
+                <p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed labore officia, voluptate at quisquam minus molestias rerum. Corporis temporibus minima deserunt eligendi atque, voluptates, veritatis, numquam consequuntur repellendus perferendis voluptate?
+                    <br> <br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, numquam tempore minima, incidunt excepturi repellendus. Porro aut explicabo quisquam deleniti culpa, incidunt provident, eaque, neque sit totam eum laborum ea!</p>
+<!--
+                <ul class="tags">
+
+                    <li><a href=" "> Front-End Developing </a></li>
+                    <li><a href=" "> Back-End Developing </a></li>
+                    <li><a href=" "> Full-Stack Developer </a></li>
+
+                </ul>
+-->
+            </div>
+
+        </div>
+
+
+    </div>
 
 
 </body>
